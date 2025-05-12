@@ -68,6 +68,11 @@
       text-decoration: none;
       font-weight: bold;
       margin-top: 10px;
+      display: inline-block;
+    }
+    .whatsapp-btn img {
+      vertical-align: middle;
+      margin-right: 8px;
     }
     .contato {
       text-align: center;
@@ -122,11 +127,14 @@
       <option value="BPC">BPC</option>
       <option value="LOAS">LOAS</option>
     </select>
-    <a class="whatsapp-btn" href="#" onclick="enviarWhatsapp()">Enviar pelo WhatsApp</a>
+    <a class="whatsapp-btn" href="#" onclick="enviarWhatsapp()">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp">
+      Enviar pelo WhatsApp
+    </a>
   </form>
 
   <div class="contato">
-    (88) 98875-7154<br>
+    (88) 99236-2890<br>
     @nevescredito
   </div>
 </section>
@@ -141,7 +149,7 @@
     const telefone = document.getElementById("telefone").value;
     const servico = document.getElementById("servico").value;
     const msg = `Olá, meu nome é ${nome}, meu telefone é ${telefone} e tenho interesse em: ${servico}`;
-    const url = "https://wa.me/5588988757154?text=" + encodeURIComponent(msg);
+    const url = "https://wa.me/5588992362890?text=" + encodeURIComponent(msg);
     window.open(url, "_blank");
   }
 </script>
